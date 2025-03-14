@@ -1,0 +1,55 @@
+body {
+    background-color: #fcd8ff; /* Light pink background */
+    font-family: sans-serif; /* Choose a suitable font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust minmax value to fit */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background-color: #fbcaff;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.price {
+    background-color: #beb4ff;
+    color: #000; /* or other appropriate color*/
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.service-name {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    color:#ff73c9; /* or other appropriate color */
+}
+
+.service-item img {
+    max-width: 80px;
+    height: auto;
+}
+
+.popular-services {
+    color:   #4130b1; /* Light blue color */
+    font-size: 2em;
+    transform: rotate(0deg); /* Rotate the text */
+    writing-mode: gorizontalu-rl; /* Set writing mode to vertical */
+}
