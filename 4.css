@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcd8ff; /* Default background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.appointment {
+    background-color: #fbcaff; /* Light pink background */
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px; /* Smaller max-width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* For positioning characters */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #4130b1; /* Light blue title */
+    margin-bottom: 30px;
+    font-size: 2em; /* Smaller title size */
+}
+
+.form {
+    background-color:#fcd8ff;
+    padding: 30px;
+    border-radius: 50px;
+    border: 3px solid #ff73c9; /* Red border */
+}
+
+.form h2 {
+    color: #4130b1; /* Red heading */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #4130b1;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff73c9; /* Pinkish input border */
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4130b1; /* otpravit */
+    color: #ff73c9; /* Red button text */
+    padding: 12px 20px;
+    border: 3px solid #ff73c9; /* Red button border */
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4eff60; /* Lighter red on hover */
+}
+
+.character {
+    position: absolute;
+    width: 100px; /* Smaller character size */
+    height: auto;
+}
+
+.character1 {
+    top: 50px; /* Adjust position */
+    left: -30px;
+}
+
+.character2 {
+    bottom: 50px; /* Adjust position */
+    right: -30px;
+}
+
+@media (max-width: 768px) {
+    .appointment {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .character {
+        width: 70px; /* Smaller on smaller screens */
+    }
+
+    .character1 {
+        top: 20px;
+        left: -15px;
+    }
+
+    .character2 {
+        bottom: 20px;
+        right: -15px;
+    }
+}
